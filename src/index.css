@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.favButton {
+  background-color: rgba(136, 136, 136, 0.116);
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 104px;
+  background-color: #cfcfcf;
+}
+
+footer > img {
+  width: 200px;
+  margin: 0;
+}
+footer > p {
+  margin: 0;
+}
+
+.dark footer {
+  background-color: #2b3035;
+}
+
+.card-wraper {
+  position: relative;
+}
+
+.card-wraper button {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding: 0;
+}
+
+.card-wraper button svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  border: 0.5px solid rgb(136, 136, 136);
+  gap: 12px;
+  border-radius: 10px;
+  background-color: #f3f4f4;
+  padding-bottom: 12px;
+}
+
+.dark .card {
+  background-color: #2b3035;
+}
+
+.card:hover {
+  border: 0.5px solid rgb(206, 217, 142);
+}
+
+.card-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 80vw;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card p {
+  margin: 0;
+  padding: 0;
+}
+
+a.card {
+  color: black;
+}
+
+.dark a.card {
+  color: white;
+}
+
+.dark .favButton {
+  color: white;
+}
+
+.favButton.favorited {
+  color: rgb(236, 47, 47);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  border: 1px solid #ccc;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.dark {
+  background-color: #12121296;
+  color: white;
+}
+.dark > a {
+  color: white;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 136px;
+}
+
+/* ESTILOS AGREGADOS */
+
+/* Header y Parrafos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  text-align: center;
+}
+
+.title-bar {
+  display: flex;
+  width: 100vw;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.back-btn {
+  position: absolute;
+  left: 10%;
+  top: 96px;
+  height: 30px;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+}
+
+.dark .back-btn {
+  color: white;
+}
+
+.detail-heading {
+  font-size: 1.7rem;
+}
+
+.skeleton_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+  background: linear-gradient(
+    to right,
+    #f3f3f3 0%,
+    #cdcccc 20%,
+    #f3f3f3 40%,
+    #f3f3f3 100%
+  );
+  background-size: 200% 100%;
+  animation: wave-slide 2.5s linear infinite;
+}
+
+.skeleton_info {
+  width: 90%;
+  background: linear-gradient(
+    to right,
+    #f3f3f3 0%,
+    #cdcccc 20%,
+    #f3f3f3 40%,
+    #f3f3f3 100%
+  );
+  background-size: 200% 100%;
+  animation: wave-slide 2.5s linear infinite;
+  border-radius: 5px;
+  height: 21.6px;
+}
+
+@keyframes wave-slide {
+  0% {
+    background-position: 200% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
